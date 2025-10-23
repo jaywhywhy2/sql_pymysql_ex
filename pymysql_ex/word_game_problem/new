@@ -1,0 +1,20 @@
+import random
+import time
+import pymysql
+import datetime
+from dotenv import load_dotenv
+import os
+from pygame import mixer
+mixer.init()
+load_dotenv()
+
+# MySQL 설정
+HOST = os.getenv("HOST", "localhost")
+PORT = int(os.getenv("PORT", "3306"))
+USER = os.getenv("USER", "root")
+PASSWD = os.getenv("PASSWD", "")
+DB1 = os.getenv("DB1", "wordgame_db")
+DB2 = os.getenv("DB2", "another_db")
+
+
+
