@@ -12,8 +12,8 @@ load_dotenv(override=True)
 # MySQL 설정
 HOST = os.getenv("HOST", "localhost")
 PORT = int(os.getenv("PORT", "3306"))
-USER = os.getenv("USER", "jay")
-PASSWD = os.getenv("PASSWD", "1234")
+USER = os.getenv("USER", "")
+PASSWD = os.getenv("PASSWD", "")
 DB1 = os.getenv("DB1", "wordgame_db")
 DB2 = os.getenv("DB2", "another_db")
 # 환경변수를 .env에 따로 하는 이유는, github에 publish하거나 cloud에 했을때 보안이슈 발생
